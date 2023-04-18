@@ -1063,7 +1063,7 @@ $(document).ready(function () {
 			.call()
 			.then(function (address) {
 				console.log(address)
-				if (address) $(".winner-text").text(address);
+				if (address) $(".winner-text").text("Recent lucky treasure seeker: " + address);
 			});
 	}
 	loadWinnerWallet();
