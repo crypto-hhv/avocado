@@ -1,0 +1,85 @@
+a:hover {
+	text-decoration: none;
+	outline-style: none;
+	color: #3dab63;
+}
+
+#BGVideo {
+	filter: hue-rotate(280deg);
+	--webkit-filter: hue-rotate(280deg);
+	min-width: 110%;
+}
+
+#main-logo-icon {
+	width: 40px;
+	margin-left: 8px;
+	animation-name: logo-top-bottom;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	transform: translateY(5px);
+}
+
+@keyframes logo-top-bottom {
+	0% {
+		transform: translateY(5px);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+
+#toplogospan {
+	color: #3dab63 !important;
+}
+
+g > text {
+	fill: #3dab63 !important;
+}
+
+.daymenu-title {
+	color: #85b493;
+	text-shadow: 0 2px 8px #a2fece, 0 -2px 1px #fff;
+}
+.daymenu-desc {
+	color: #85b493;
+}
+
+.header-icon-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.btn-buy-now {
+	color: #fff;
+	background-color: #3dab63;
+	border-color: #3dab63;
+	border-radius: 100px;
+	width: auto;
+	padding: 6px 20px;
+	font-family: "Averia Libre", cursive;
+}
+
+.header-icon {
+	padding: 8px 16px 8px 0px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.daymenu-cont.show .daymenu-title,
+.daymenu-cont.show .daymenu-desc {
+	transform: translate3d(0,0,0);
+	opacity: 1;
+}
+
+.daymenu-title {
+	font-size: 3.5vw;
+}
+
+@media screen and (min-width: 1699px) {
+	.daymenu-title {
+		font-size: 60px;
+	}
+}

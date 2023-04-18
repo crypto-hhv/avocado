@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>3WART - Ice Cream & Candy</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png" />
+		<!-- Font Awesome icons (free version)-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;700&display=swap" rel="stylesheet" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/animate.css" rel="stylesheet" />
+		<link href="css/sweetalert2.min.css" rel="stylesheet" />
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+		<link href="css/select2.min.css" rel="stylesheet" />
+		<link href="css/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/custom.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+			document.documentElement.className = "js";
+		</script>
+	</head>
+	<body id="page-top" class="loading">
+		<div id="body-overlay"></div>
+		<!-- Page Preloader -->
+		<div id="preloader">
+			<div class="loader"></div>
+		</div>
+
+		<!-- video background -->
+		<div class="">
+			<video autoplay muted loop id="BGVideo">
+				<source src="assets/bg.mp4" type="video/mp4" />
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<!-- end video background -->
+
+		<!-- Navigation-->
+		<div id="navbarfx" class="navbar fixed-top navbar-light navbar-white-">
+			<a class="" href="index.html">
+				<div id="toplogocontainer" class="top-logo-container">
+					<img src="./assets/logo.png" id="main-logo-icon" />
+					<!-- <svg id='ice-cream-wrapper' xmlns='http://www.w3.org/2000/svg' x="0px" y="0px" viewbox='0 2 100 60'>
+				  <g class="the-ice-cream">
+					<circle class="ice-cream__ball" cx='50' cy='19' r='14.5' id='scoop-3'/>
+					<circle class="ice-cream__ball" cx='40' cy='36' r='15' id='scoop-1'/>
+					<circle class="ice-cream__ball" cx='61' cy='33' r='15' id='scoop-2'/>
+
+				  </g>
+				</svg> -->
+
+					<span id="toplogospan"> Avocado</span>
+				</div>
+			</a>
+
+			<div class="header-icon-wrapper">
+				<a class="header-icon" href="__twitter"><i class="fab fa-twitter"></i></a>
+				<a class="header-icon" href="__telegram"><i class="fab fa-telegram-plane"></i></a>
+				<a class="btn btn-buy-now" href="__uniswap">Buy now</a>
+			</div>
+			<!-- <button id="showRight" class="umenu-cont navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="MenuIconChange(this)">
+					<span class="menubars mi_ball1"></span>
+					<span class="menubars mi_ball2"></span>
+					<span class="menubars mi_ball3"></span>
+				</button> -->
+		</div>
+
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-right">
+			<ul class="hidden bt-menu-li">
+				<li class="cart mb-4">
+					<a class="eff-pop" href="cart.html">
+						<div class="">
+							<i class="fas fa-shopping-bag"></i>
+							<p class="d-inline text-sm z-index-1 font-weight-bold" title="">
+								<sup><span class="item-in-cart-count eff-pop-item">2</span></sup>
+							</p>
+						</div>
+					</a>
+					<a class="eff-pop" href="wishlist.html">
+						<div class="">
+							<i class="fas fa-heart"></i>
+							<p class="d-inline text-sm z-index-1 font-weight-bold" title="">
+								<sup><span class="item-count eff-pop-item">3</span></sup>
+							</p>
+						</div>
+					</a>
+					<a class="eff-pop me-3" href="#1" data-bs-toggle="modal" data-bs-target="#SignInModal">
+						<i class="fas fa-unlock eff-pop-item"></i>
+					</a>
+				</li>
+
+				<li class="menu menu--umenu">
+					<a href="menu.html" class="menu__item">
+						<div class="menu__item-name cursor-pointer px-4 py-2">Menu</div>
+					</a>
+				</li>
+
+				<li class="menu menu--umenu">
+					<a href="my-account.html" class="menu__item">
+						<div class="menu__item-name cursor-pointer px-4 py-2">My Account</div>
+					</a>
+				</li>
+
+				<li class="menu menu--umenu">
+					<a href="about.html" class="menu__item">
+						<div class="menu__item-name cursor-pointer px-4 py-2">About</div>
+					</a>
+				</li>
+
+				<li class="menu menu--umenu">
+					<a href="contact.html" class="menu__item">
+						<div class="menu__item-name cursor-pointer px-4 py-2">Contact</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- End Navigation-->
+
+		<!-- Page Content-->
+		<div class="content-wrapper">
+			<div class="container-fluid px-0">
+				<div class="space-90"></div>
+
+				<div class="container">
+					<div class="col-md-12 svgtext">
+						<svg viewBox="-750 0 1500 500" width="100%" height="100%" preserveAspectRatio="xMidYMin slice">
+							<defs>
+								<filter id="goo">
+									<feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+									<feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5" result="goo"></feColorMatrix>
+									<feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+								</filter>
+							</defs>
+							<g filter="url(#goo)">
+								<text x="0" y="150" dy="0">
+									<tspan x="0" dy=".6em">Discover fortune</tspan>
+									<tspan x="0" dy="1.2em">in the magical Avocado garden</tspan>
+								</text>
+								<text x="0" y="150">
+									<tspan x="0" dy=".6em">Join the harvest, believe</tspan>
+									<tspan x="0" dy="1.2em">and reap bountiful rewards</tspan>
+								</text>
+							</g>
+						</svg>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 dmenu">
+							<div class="grid__item grid__item--bg">
+								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
+									<img class="img-fluid" src="assets/main-4-1.png" alt="Image" />
+									<img class="img-fluid" src="assets/main-4-2.png" alt="Image" />
+								</div>
+								<div class="grid__item-content"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="daymenu-cont">
+								<h4 class="daymenu-title">Recent lucky treasure seeker</h4>
+								<p class="daymenu-desc">
+									<span class="winner-text">0x00...0000</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 order-md-1 order-2">
+							<div class="daymenu-cont">
+								<h4 class="daymenu-title">Experience the Avocado harvest journey.</h4>
+								<p class="daymenu-desc">
+									In the magical Avocado garden, visitors contribute to its growth for a chance to participate in the harvest. As they offer gifts, they may unlock a share of the garden's riches. The more the garden flourishes, the greater the rewards, creating an enchanting adventure that brings joy and fortune.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6 order-md-2 order-1 dmenu">
+							<div class="grid__item grid__item--bg">
+								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
+									<img class="img-fluid" src="assets/main-2-1.png" alt="Image" />
+									<img class="img-fluid" src="assets/main-2-2.png" alt="Image" />
+								</div>
+								<div class="grid__item-content"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 dmenu">
+							<div class="grid__item grid__item--bg">
+								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
+									<img class="img-fluid" src="assets/main-1-1.png" alt="Image" />
+									<img class="img-fluid" src="assets/main-1-2.png" alt="Image" />
+								</div>
+								<div class="grid__item-content"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="daymenu-cont">
+								<h4 class="daymenu-title">Tax & Liquidity</h4>
+								<p class="daymenu-desc">
+									All LP Token is store in token Smart Contract as a pool of reward for the seeker. 5% Fees on trading will be fully used for liquidity and contributed to nutrion the Avocado garden.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 order-md-1 order-2">
+							<div class="daymenu-cont">
+								<h4 class="daymenu-title">Chocolate Ice Cream</h4>
+								<p class="daymenu-desc">
+									Cioccolato is a variety of Italian gelato that is prepared with chocolate and cocoa powder as the key ingredients alongside cream, sugar, and
+									milk.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6 order-md-2 order-1 dmenu">
+							<div class="grid__item grid__item--bg">
+								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
+									<img class="img-fluid" src="assets/main-3-1.png" alt="Image" />
+									<img class="img-fluid" src="assets/main-3-2.png" alt="Image" />
+								</div>
+								<div class="grid__item-content"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+
+			<footer class="footer noprint" data-background-color="white">
+				<div class="container">
+					<nav style="" class=" ">
+						<ul>
+							<li>
+								<a href="__telegram" class=" "> Telegram </a>
+							</li>
+							<li>
+								<a href="__twitter" class=" "> Twitter </a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright" id="copyright">
+						©
+						<script>
+							document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+						</script>
+						Avocado
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer -->
+
+			<!-- backtotop -->
+
+			<div class="text-center col-md-12 ml-auto mr-auto mb-2">
+				<a href="#page-top" class="js-scroll-trigger">
+					<div class="backtotop box-backtotop-line rotate--180">
+						<!-- <i class="fas fa-chevron-up"></i>  -->
+					</div>
+				</a>
+			</div>
+
+			<!-- backtotop -->
+		</div>
+		<!-- End Page Content-->
+
+		<!-- modal -->
+		<div class="modal fade" id="SignInModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-md modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- Sign in -->
+
+						<div class="login-box">
+							<div class="card">
+								<div class="card-body login-card-body">
+									<div class="login-logo mb-4">
+										<h3 class="text-center">Sign In</h3>
+									</div>
+									<form method="post">
+										<div class="input-group flex-nowrap mt-3">
+											<span class="input-group-text"><i class="fas fa-envelope"></i></span>
+											<input type="email" class="form-control" required="required" placeholder="Your Email" autocomplete="off" />
+										</div>
+
+										<div class="input-group flex-nowrap mt-3">
+											<span class="input-group-text"><i class="fas fa-unlock"></i></span>
+											<input type="password" class="form-control" required="required" placeholder="Your Password" autocomplete="off" />
+										</div>
+
+										<div class="sign-action mt-3 mb-2">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="Remember" />
+												<label class="form-check-label" for="Remember"> Remember Me </label>
+											</div>
+
+											<div class="sign-action-right">
+												<a href="#1">Forgot password?</a>
+											</div>
+										</div>
+
+										<div class="row mt-4">
+											<div class="mr-auto ml-auto">
+												<button type="submit" class="btn btn-outline-green w-100">Sign In</button>
+											</div>
+										</div>
+									</form>
+
+									<hr class="mt-4" />
+
+									<p class="text-center">Sign in with social account</p>
+
+									<div class="product-share text-center">
+										<a href="#1" class="btn btn-outline-soc"><i class="fab fa-facebook-square"></i></a>
+										<a href="#1" class="btn btn-outline-soc"><i class="fab fa-google"></i></a>
+									</div>
+
+									<div class="register text-center">Not a member? <a href="register.html" class=""> Register</a></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Sign in -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end modal -->
+
+		<!-- core JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/sweetalert2.min.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/bootstrap-datetimepicker.js"></script>
+		<script src="js/select2.min.js"></script>
+		<script src="js/SmoothScroll.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/hover/hover-effect.umd.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.4.0/web3.min.js"></script>
+		<script src="js/token.js"></script>
+
+		<script>
+			imagesLoaded(document.querySelectorAll("img"), () => {
+				document.body.classList.remove("loading");
+			});
+
+			Array.from(document.querySelectorAll(".grid__item-img")).forEach((el) => {
+				const imgs = Array.from(el.querySelectorAll("img"));
+				new hoverEffect({
+					parent: el,
+					intensity: el.dataset.intensity || undefined,
+					speedIn: el.dataset.speedin || undefined,
+					speedOut: el.dataset.speedout || undefined,
+					easing: el.dataset.easing || undefined,
+					hover: el.dataset.hover || undefined,
+					image1: imgs[0].getAttribute("src"),
+					image2: imgs[1].getAttribute("src"),
+					displacementImage: el.dataset.displacement,
+				});
+			});
+		</script>
+	</body>
+</html>
