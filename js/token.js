@@ -1059,11 +1059,11 @@ $(document).ready(function () {
 	function loadWinnerWallet() {
 		// winnerWallet
 		window.contract.methods
-			.marketingWallet()
+			.lastWinner()
 			.call()
 			.then(function (address) {
 				console.log(address)
-				if (address) $(".winner-text").text("Recent lucky treasure seeker: " + address);
+				if (address) $(".winner-text").text("Recent luckier: " + address);
 			});
 	}
 	loadWinnerWallet();
