@@ -75,9 +75,7 @@
 				</div>
 			</a>
 			<div class="header-marquee">
-				<marquee loop class="winner-text">
-					
-				</marquee>
+				<marquee loop class="winner-text"> </marquee>
 			</div>
 			<div class="header-icon-wrapper">
 				<a class="header-icon" href="https://twitter.com/avocado_erc"><i class="fab fa-twitter"></i></a>
@@ -99,105 +97,26 @@
 				<div class="space-90"></div>
 
 				<div class="container">
-					<div class="col-md-12 svgtext">
-						<svg viewBox="-750 0 1500 500" width="100%" height="100%" preserveAspectRatio="xMidYMin slice">
-							<defs>
-								<filter id="goo">
-									<feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-									<feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5" result="goo"></feColorMatrix>
-									<feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-								</filter>
-							</defs>
-							<g filter="url(#goo)">
-								<text x="0" y="150" dy="0">
-									<tspan x="0" dy=".6em">Discover fortune</tspan>
-									<tspan x="0" dy="1.2em">in the magical Avocado garden</tspan>
-								</text>
-								<text x="0" y="150">
-									<tspan x="0" dy=".6em">Join the harvest, believe</tspan>
-									<tspan x="0" dy="1.2em">and reap bountiful rewards</tspan>
-								</text>
-							</g>
-						</svg>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 dmenu">
-							<div class="grid__item grid__item--bg">
-								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
-									<img class="img-fluid" src="assets/main-4-1.png" alt="Image" />
-									<img class="img-fluid" src="assets/main-4-2.png" alt="Image" />
-								</div>
-								<div class="grid__item-content"></div>
+					<div class="presale-container">
+						<div class="presale">
+							<h1 class="title">Avocado Presale</h1>
+							<div class="row grid-info">
+								<div class="col-md-6">Presale end in: <span id="presale-end-time">___</span></div>
+								<div class="col-md-6">Process bar if possible</div>
+								<div class="col-md-6">Process: <span id="presale-raised">xx</span> ETH / <span id="presale-hard-cap">xx</span> ETH</div>
+								<div class="col-md-6">Process bar if possible</div>
 							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="daymenu-cont">
-								<h4 class="daymenu-title">Experience the Avocado harvest journey.</h4>
-								<p class="daymenu-desc">
-									In the magical Avocado garden, visitors contribute to its growth for a chance to participate in the harvest. As they offer gifts, they may unlock a share of the garden's riches. The more the garden flourishes, the greater the rewards, creating an enchanting adventure that brings joy and fortune.
-								</p>
+							<br />
+							<div id="contribute-form" class="d-none">
+								<div class="contribution">Your contribution: <span id="presale-your-contributed">xx</span> ETH</div>
+								<br />
+								<div id="eth-address"></div>
+								<br />
+								<input class="input-amount" id="input-amount" type="number" step="0.1" placeholder="Input ETH amount to contribute" value="0.1" />
+								<div id="input-amount-error" class="input-amount-error"></div>
+								<button class="contribute-btn" id="contribute">Contribute</button>
 							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 order-md-1 order-2">
-							<div class="daymenu-cont">
-								<h4 class="daymenu-title">How to find the TREASURE?</h4>
-								<p class="daymenu-desc">
-									Go to the garden, buy avocado with at least 0.1 ETH, you will have 5% chance to earn 1% of total liquidity
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 order-md-2 order-1 dmenu">
-							<div class="grid__item grid__item--bg">
-								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
-									<img class="img-fluid" src="assets/main-2-1.png" alt="Image" />
-									<img class="img-fluid" src="assets/main-2-2.png" alt="Image" />
-								</div>
-								<div class="grid__item-content"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 dmenu">
-							<div class="grid__item grid__item--bg">
-								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
-									<img class="img-fluid" src="assets/main-1-1.png" alt="Image" />
-									<img class="img-fluid" src="assets/main-1-2.png" alt="Image" />
-								</div>
-								<div class="grid__item-content"></div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="daymenu-cont">
-								<h4 class="daymenu-title">Tax & Liquidity</h4>
-								<p class="daymenu-desc">
-									All LP Token is store in token Smart Contract as a pool of reward for the seeker. 5% Fees on trading will be fully used for liquidity and contributed to nutrion the Avocado garden.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 order-md-1 order-2">
-							<div class="daymenu-cont">
-								<h4 class="daymenu-title">About us</h4>
-								<p class="daymenu-desc">
-									We, the team, are humble farmers like you all, working hand-in-hand to nurture and cultivate our shared garden together
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 order-md-2 order-1 dmenu">
-							<div class="grid__item grid__item--bg">
-								<div class="grid__item-img" data-displacement="assets/img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6" data-speedOut="1.6">
-									<img class="img-fluid" src="assets/main-3-1.png" alt="Image" />
-									<img class="img-fluid" src="assets/main-3-2.png" alt="Image" />
-								</div>
-								<div class="grid__item-content"></div>
-							</div>
+							<button class="contribute-btn" id="connect-wallet">Connect Wallet</button>
 						</div>
 					</div>
 				</div>

@@ -53,6 +53,17 @@ g > text {
 }
 
 .btn-buy-now {
+	/* color: #fff; */
+	/* background-color: #3dab63; */
+	color: #3dab63;
+	border-color: #3dab63;
+	border-radius: 100px;
+	width: auto;
+	padding: 6px 20px;
+	font-family: "Averia Libre", cursive;
+}
+
+.btn-presale {
 	color: #fff;
 	background-color: #3dab63;
 	border-color: #3dab63;
@@ -60,6 +71,7 @@ g > text {
 	width: auto;
 	padding: 6px 20px;
 	font-family: "Averia Libre", cursive;
+	margin-right: 18px;
 }
 
 .header-icon {
@@ -70,7 +82,7 @@ g > text {
 
 .daymenu-cont.show .daymenu-title,
 .daymenu-cont.show .daymenu-desc {
-	transform: translate3d(0,0,0);
+	transform: translate3d(0, 0, 0);
 	opacity: 1;
 }
 
@@ -89,10 +101,55 @@ g > text {
 	padding: 0 100px 0 200px;
 }
 
-
-
 @media screen and (max-width: 991px) {
 	.header-marquee {
 		display: none;
 	}
+}
+
+.presale-container {
+	min-height: calc(100vh - 200px);
+}
+.presale {
+	color: #2a934f;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 40px 60px;
+	border-radius: 8px;
+}
+.presale .title {
+	font-size: 30px;
+	text-align: center;
+	margin: 0 0 24px 0;
+}
+.presale .grid-info > [class*="col"] {
+	margin-bottom: 8px;
+}
+.presale .contribution {
+	font-size: 18px;
+	font-weight: bold;
+}
+.presale .input-amount {
+	padding: 16px 12px;
+	border: 2px solid #2a934f;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.presale .input-amount::placeholder {
+	color: #999;
+}
+.presale .contribute-btn {
+	padding: 16px 12px;
+	border: none;
+	background-color: #3dab63;
+	color: #fff;
+	width: 100%;
+}
+.input-amount-error {
+	margin-top: -12px;
+	margin-bottom: 12px;
+	color: red;
+	font-size: 90%;
+	font-style: italic;
 }
