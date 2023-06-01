@@ -780,6 +780,25 @@ $(document).ready(function () {
 		}
 	}
 
+	function loadStartTime() {
+		try {
+			const $ele = $("#presale-start-time");
+			if (!$ele.length) return;
+			window.contract.methods
+				.startTime()
+				.call()
+				.then(function (startTime) {
+					startTime = new Date(parseInt(startTime) * 1000);
+					startTime = startTime.toISOString();
+					startTime = startTime.slice(0, 10) + " " + startTime.slice(11, 16) + " UTC";
+					console.log("startTime", startTime);
+					$ele.text(startTime);
+				});
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
 	function loadEndTime() {
 		try {
 			const $ele = $("#presale-end-time");
@@ -807,8 +826,14 @@ $(document).ready(function () {
 				.ethRaised()
 				.call()
 				.then(function (ethRaised) {
+					ethRaised = convertBigToNumber(ethRaised);
+					window.ethRaised = ethRaised;
 					console.log("ethRaised", ethRaised);
-					$ele.text(convertBigToNumber(ethRaised));
+					$ele.text(ethRaised);
+					if (window.hardCap) {
+						const width = (window.ethRaised / window.hardCap) * 100;
+						$("#presale-process").css("width", width + "%");
+					}
 				});
 		} catch (error) {
 			console.error(error);
@@ -823,8 +848,14 @@ $(document).ready(function () {
 				.hardCap()
 				.call()
 				.then(function (hardCap) {
+					hardCap = convertBigToNumber(hardCap);
+					window.hardCap = hardCap;
 					console.log("hardCap", hardCap);
-					$ele.text(convertBigToNumber(hardCap));
+					$ele.text(hardCap);
+					if (window.hardCap) {
+						const width = (window.ethRaised / window.hardCap) * 100;
+						$("#presale-process").css("width", width + "%");
+					}
 				});
 		} catch (error) {
 			console.error(error);
@@ -863,6 +894,7 @@ $(document).ready(function () {
 	}
 
 	loadWinnerWallet();
+	loadStartTime();
 	loadEndTime();
 	loadRaised();
 	loadHardCap();

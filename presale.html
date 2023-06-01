@@ -100,11 +100,19 @@
 					<div class="presale-container">
 						<div class="presale">
 							<h1 class="title">Avocado Presale</h1>
-							<div class="row grid-info">
-								<div class="col-md-6">Presale end in: <span id="presale-end-time">___</span></div>
-								<div class="col-md-6">Process bar if possible</div>
-								<div class="col-md-6">Process: <span id="presale-raised">xx</span> ETH / <span id="presale-hard-cap">xx</span> ETH</div>
-								<div class="col-md-6">Process bar if possible</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div style="margin-bottom: 10px"><strong>Presale start in:</strong> <span id="presale-start-time">___</span></div>
+									<div><strong>Presale end in:</strong> <span id="presale-end-time">___</span></div>
+								</div>
+								<div class="col-md-6">
+									<div style="margin-bottom: 10px">
+										<strong>Process:</strong> <span id="presale-raised">xx</span> ETH / <span id="presale-hard-cap">xx</span> ETH
+									</div>
+									<div class="progress-bar">
+										<div class="bar" id="presale-process"></div>
+									</div>
+								</div>
 							</div>
 							<br />
 							<div id="contribute-form" class="d-none">

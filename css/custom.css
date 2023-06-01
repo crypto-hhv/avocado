@@ -153,3 +153,17 @@ g > text {
 	font-size: 90%;
 	font-style: italic;
 }
+
+.progress-bar {
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #ccebd6;
+}
+
+.progress-bar .bar {
+	background-color: #3dab63;
+	height: 100%;
+	width: 50px;
+	border-radius: 10px;
+}
