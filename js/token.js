@@ -884,6 +884,7 @@ $(document).ready(function () {
 
 		window.ethereum.request({method: "eth_accounts"}).then(function (addresses) {
 			const address = addresses[0];
+			if (!address) return;
 			$("#eth-address").text(address);
 			window.ethAddress = address;
 			$("#contribute-form").removeClass("d-none");
